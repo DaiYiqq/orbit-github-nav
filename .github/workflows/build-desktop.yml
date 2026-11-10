@@ -1,0 +1,106 @@
+name: 构建全平台安装包
+
+# 桌面端：Windows(.msi/.exe) / macOS(.dmg/.app) / Linux(.AppImage/.deb)
+# 移动端：Android(.apk) 由 Tauri 2 构建；iOS 因需 Apple 签名，请在 macOS + Xcode 本地执行 npm run ios:build
+# 手机与电脑也可直接使用网页版的 PWA 安装，界面与数据完全一致。
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: read
+
+jobs:
+  desktop:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            platform: windows
+          - os: macos-latest
+            platform: macos
+          - os: ubuntu-22.04
+            platform: linux
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - uses: dtolnay/rust-toolchain@stable
+
+      - uses: swatinem/rust-cache@v2
+        with:
+          workspaces: desktop/src-tauri
+
+      - name: 安装 Linux 构建依赖
+        if: matrix.platform == 'linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libwebkit2gtk-4.1-dev libappindicator3-dev librsvg2-dev patchelf
+
+      - name: 安装前端依赖
+        working-directory: desktop
+        run: npm install
+
+      - name: Tauri 构建
+        working-directory: desktop
+        run: npx tauri build
+
+      - name: 上传 ${{ matrix.platform }} 安装包
+        uses: actions/upload-artifact@v4
+        with:
+          name: Orbit-${{ matrix.platform }}
+          if-no-files-found: warn
+          path: |
+            desktop/src-tauri/target/release/bundle/msi/*.msi
+            desktop/src-tauri/target/release/bundle/nsis/*.exe
+            desktop/src-tauri/target/release/bundle/dmg/*.dmg
+            desktop/src-tauri/target/release/bundle/macos/*.app
+            desktop/src-tauri/target/release/bundle/appimage/*.AppImage
+            desktop/src-tauri/target/release/bundle/deb/*.deb
+
+  android:
+    runs-on: ubuntu-latest
+    continue-on-error: true          # Android SDK / 签名环境差异较大，失败不阻塞桌面端产物
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: android-actions/setup-android@v3
+
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: aarch64-linux-android,armv7-linux-androideabi,i686-linux-android,x86_64-linux-android
+
+      - name: 安装前端依赖
+        working-directory: desktop
+        run: npm install
+
+      - name: 初始化 Android 工程
+        working-directory: desktop
+        run: npx tauri android init
+
+      - name: 构建 APK
+        working-directory: desktop
+        run: npx tauri android build --apk
+
+      - name: 上传 Android 安装包
+        uses: actions/upload-artifact@v4
+        with:
+          name: Orbit-android
+          if-no-files-found: warn
+          path: desktop/src-tauri/gen/android/app/build/outputs/apk/**/*.apk
