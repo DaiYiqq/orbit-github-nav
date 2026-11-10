@@ -365,6 +365,15 @@
       DEV.site
         ? { ic: 'link', label: '个人网站', value: DEV.site.replace(/^https?:\/\//, ''), href: DEV.site, desc: '开发者个人主页' }
         : { ic: 'link', label: '个人网站', value: '未公开', href: '', desc: '可在 site/config.js 里补充' },
+      DEV.telegram
+        ? { ic: 'telegram', label: 'Telegram（个人号）', value: '@' + DEV.telegram, href: DEV.telegramUrl || ('https://t.me/' + DEV.telegram), desc: '即时通讯，备注来意更容易通过' }
+        : { ic: 'telegram', label: 'Telegram（个人号）', value: '未公开', href: '', desc: '可在 site/config.js 里补充' },
+      DEV.telegramChannel
+        ? { ic: 'telegram', label: 'Telegram 频道', value: '@' + DEV.telegramChannel, href: DEV.telegramChannelUrl || ('https://t.me/' + DEV.telegramChannel), desc: '订阅更新与公告' }
+        : { ic: 'telegram', label: 'Telegram 频道', value: '未公开', href: '', desc: '可在 site/config.js 里补充' },
+      DEV.qq
+        ? { ic: 'qq', label: 'QQ', value: DEV.qq, href: '', desc: 'QQ 号，请备注来意' }
+        : { ic: 'qq', label: 'QQ', value: '未公开', href: '', desc: '可在 site/config.js 里补充' },
     ];
 
     const feedback = [
@@ -416,9 +425,9 @@
         <div class="panel">
           <h3>隐私与数据</h3>
           <ul class="docs-list">
-            <li>这里的联系信息全部来自 GitHub 公开资料，没有私人邮箱或手机号。</li>
+            <li>这里的联系方式来自开发者公开提供的 GitHub / Telegram / QQ，不含更私密的手机号资料。</li>
             <li>本站不收集访客资料；游客的收藏与设置只保存在你自己的浏览器里。</li>
-            <li>想补充邮箱 / 个人网站，改 <b>site/config.js</b> 的 <b>developer</b> 配置即可，页面会自动显示。</li>
+            <li>想补充邮箱 / 个人网站 / Telegram / QQ，改 <b>site/config.js</b> 的 <b>developer</b> 配置即可，页面会自动显示。</li>
           </ul>
           <div style="display:flex;gap:8px;flex-wrap:wrap"><a class="btn btn-sm" href="#/docs">站内文档</a><a class="btn btn-sm btn-ghost" href="#/settings">设置</a></div>
         </div>
