@@ -49,8 +49,11 @@ function collect(dir, base = '', out = []) {
 
 // GitHub 要求修改 .github/workflows/ 的令牌带 workflow scope；
 // 当前 gh 凭据只有 repo/gist/read:org，带 workflow 的提交会被拒绝（404/403）。
-// 因此工作流文件不进这次 Git Data API 提交，Pages 改用传统分支发布（/site 目录）。
-const SKIP_PREFIXES = ['.github/workflows/'];
+// 默认跳过工作流文件、Pages 用传统分支发布；授权后加 --with-workflows 即可补齐：
+//   gh auth refresh -h github.com -s workflow
+//   node scripts/push-via-api.mjs --with-workflows
+const WITH_WORKFLOWS = process.argv.includes('--with-workflows');
+const SKIP_PREFIXES = WITH_WORKFLOWS ? [] : ['.github/workflows/'];
 const allFiles = collect(ROOT);
 const files = allFiles.filter((f) => !SKIP_PREFIXES.some((p) => f.startsWith(p))).sort();
 const skipped = allFiles.length - files.length;
