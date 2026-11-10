@@ -21,15 +21,20 @@ window.__GH_NAV_CONFIG__ = {
   // 站内「联系开发者」页会明确显示「未公开」并引导使用 Issues。
   // 想补充时直接填 email / site，页面与 README 会自动带上。
   developer: {
-    name: 'DaiYi',
+    name: '戴亿',
     github: 'DaiYiqq',
     githubUrl: 'https://github.com/DaiYiqq',
     avatar: 'https://avatars.githubusercontent.com/u/238861530?v=4',
     repoUrl: 'https://github.com/DaiYiqq/orbit-github-nav',
     issuesUrl: 'https://github.com/DaiYiqq/orbit-github-nav/issues',
+    telegram: 'daiyi520',
+    telegramUrl: 'https://t.me/daiyi520',
+    telegramChannel: 'rootlover52',
+    telegramChannelUrl: 'https://t.me/rootlover52',
+    qq: '1703205607',
     email: '',
     site: '',
-    note: '欢迎通过 Issues 反馈问题、提出建议或申请收录项目。',
+    note: '欢迎通过 Issues、Telegram 或 QQ 反馈问题、提出建议或申请收录项目。',
   },
 
   // ── 可选登录 / 跨端同步 ─────────────────────────────────────
