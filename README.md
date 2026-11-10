@@ -482,12 +482,14 @@ A：不会。只使用 GitHub 公开 API 的仓库信息（名称、描述、星
 
 | 项目 | 内容 |
 | --- | --- |
-| 开发者 | **DaiYi**（GitHub `@DaiYiqq`） |
+| 开发者 | **戴亿**（GitHub `@DaiYiqq`） |
 | GitHub 主页 | https://github.com/DaiYiqq |
 | 项目仓库 | https://github.com/DaiYiqq/orbit-github-nav |
 | GitHub Pages | https://DaiYiqq.github.io/orbit-github-nav/ |
 | Issues（推荐） | https://github.com/DaiYiqq/orbit-github-nav/issues |
-| 邮箱 / 个人网站 | 账号未公开；想补充请改 `site/config.js` 的 `developer.email` / `developer.site` |
+| Telegram（个人号） | [@daiyi520](https://t.me/daiyi520) |
+| Telegram（频道） | https://t.me/rootlover52 |
+| QQ | 1703205607 |
 
 站内还有完整的「联系开发者」整页（侧栏「我的」→「联系开发者」，或直接访问 `#/contact`）：开发者卡片、五种联系渠道、三类填好模板的 Issue 入口（报告问题 / 功能建议 / 申请收录）、项目信息与隐私说明；「使用文档」里也有对应章节。
 
