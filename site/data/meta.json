@@ -1,0 +1,290 @@
+{
+  "updatedAt": "2026-11-08T14:40:51.737Z",
+  "count": 3265,
+  "queryCount": 47,
+  "source": "GitHub Search API",
+  "categories": [
+    {
+      "slug": "ai",
+      "label": "AI / 大模型",
+      "icon": "sparkles",
+      "color": "#7C5CFF",
+      "desc": "LLM、多模态、训练与推理框架",
+      "count": 1329
+    },
+    {
+      "slug": "mcp",
+      "label": "MCP 生态",
+      "icon": "plug",
+      "color": "#0A84FF",
+      "desc": "Model Context Protocol 服务端与客户端",
+      "count": 379
+    },
+    {
+      "slug": "agent",
+      "label": "AI Agent",
+      "icon": "bot",
+      "color": "#FF7A45",
+      "desc": "自主智能体、编码代理、多智能体框架",
+      "count": 840
+    },
+    {
+      "slug": "skills",
+      "label": "Skills 技能包",
+      "icon": "blocks",
+      "color": "#30B0C7",
+      "desc": "Claude Skills / Agent Skills / 提示词技能",
+      "count": 410
+    },
+    {
+      "slug": "frontend",
+      "label": "前端 & UI",
+      "icon": "layout",
+      "color": "#FF375F",
+      "desc": "框架、组件库、设计系统与 CSS",
+      "count": 626
+    },
+    {
+      "slug": "backend",
+      "label": "后端 & 服务",
+      "icon": "server",
+      "color": "#34C759",
+      "desc": "Web 框架、API、微服务",
+      "count": 1076
+    },
+    {
+      "slug": "mobile",
+      "label": "移动 & 桌面",
+      "icon": "phone",
+      "color": "#FF9F0A",
+      "desc": "iOS / Android / 跨平台 / 桌面应用",
+      "count": 619
+    },
+    {
+      "slug": "devops",
+      "label": "DevOps & 云原生",
+      "icon": "cloud",
+      "color": "#5E5CE6",
+      "desc": "容器、K8s、CI/CD、可观测性",
+      "count": 404
+    },
+    {
+      "slug": "database",
+      "label": "数据库 & 存储",
+      "icon": "database",
+      "color": "#00A6A6",
+      "desc": "关系型、NoSQL、向量与搜索引擎",
+      "count": 270
+    },
+    {
+      "slug": "security",
+      "label": "安全 & 逆向",
+      "icon": "shield",
+      "color": "#FF453A",
+      "desc": "渗透、审计、加密与漏洞研究",
+      "count": 286
+    },
+    {
+      "slug": "system",
+      "label": "系统 & 底层",
+      "icon": "cpu",
+      "color": "#8E8E93",
+      "desc": "操作系统、编译器、Rust/C++ 基础设施",
+      "count": 316
+    },
+    {
+      "slug": "data",
+      "label": "数据 & 可视化",
+      "icon": "chart",
+      "color": "#AF52DE",
+      "desc": "数据分析、BI、图表与数据工程",
+      "count": 287
+    },
+    {
+      "slug": "game",
+      "label": "游戏 & 图形",
+      "icon": "gamepad",
+      "color": "#FF2D55",
+      "desc": "引擎、渲染、游戏开发",
+      "count": 235
+    },
+    {
+      "slug": "learning",
+      "label": "学习 & 资源",
+      "icon": "book",
+      "color": "#FFCC00",
+      "desc": "Awesome 清单、教程、面试、路线图",
+      "count": 709
+    },
+    {
+      "slug": "productivity",
+      "label": "效率 & 自托管",
+      "icon": "bolt",
+      "color": "#00C7BE",
+      "desc": "CLI 工具、自动化、self-hosted 应用",
+      "count": 839
+    },
+    {
+      "slug": "opensource",
+      "label": "开源精选",
+      "icon": "heart",
+      "color": "#FF6482",
+      "desc": "社区活跃、文档完善的高质量开源项目",
+      "count": 1382
+    }
+  ],
+  "languages": [
+    [
+      "Python",
+      668
+    ],
+    [
+      "TypeScript",
+      603
+    ],
+    [
+      "JavaScript",
+      314
+    ],
+    [
+      "Go",
+      274
+    ],
+    [
+      "Rust",
+      206
+    ],
+    [
+      "C++",
+      162
+    ],
+    [
+      "Java",
+      146
+    ],
+    [
+      "Kotlin",
+      107
+    ],
+    [
+      "Swift",
+      106
+    ],
+    [
+      "Jupyter Notebook",
+      73
+    ],
+    [
+      "HTML",
+      56
+    ],
+    [
+      "Shell",
+      53
+    ],
+    [
+      "C",
+      48
+    ],
+    [
+      "C#",
+      38
+    ],
+    [
+      "PHP",
+      18
+    ],
+    [
+      "Ruby",
+      18
+    ],
+    [
+      "CSS",
+      17
+    ],
+    [
+      "Vue",
+      15
+    ],
+    [
+      "Dart",
+      8
+    ],
+    [
+      "SCSS",
+      8
+    ],
+    [
+      "MDX",
+      7
+    ],
+    [
+      "Objective-C",
+      7
+    ],
+    [
+      "Markdown",
+      6
+    ],
+    [
+      "Astro",
+      6
+    ],
+    [
+      "Lua",
+      6
+    ],
+    [
+      "PowerShell",
+      5
+    ],
+    [
+      "TeX",
+      4
+    ],
+    [
+      "Batchfile",
+      3
+    ],
+    [
+      "Assembly",
+      3
+    ],
+    [
+      "Scala",
+      3
+    ]
+  ],
+  "tiers": [
+    {
+      "key": "100k",
+      "label": "10 万星以上",
+      "min": 100000
+    },
+    {
+      "key": "50k",
+      "label": "5 万星以上",
+      "min": 50000
+    },
+    {
+      "key": "10k",
+      "label": "1 万星以上",
+      "min": 10000
+    },
+    {
+      "key": "5k",
+      "label": "5 千星以上",
+      "min": 5000
+    },
+    {
+      "key": "1k",
+      "label": "1 千星以上",
+      "min": 1000
+    },
+    {
+      "key": "all",
+      "label": "全部",
+      "min": 0
+    }
+  ]
+}

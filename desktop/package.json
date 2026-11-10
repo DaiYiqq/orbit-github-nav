@@ -1,0 +1,21 @@
+{
+  "name": "orbit-github-nav-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Orbit · GitHub 导航站桌面 / 移动端客户端（Tauri 2）",
+  "scripts": {
+    "dev:site": "node dev-server.mjs",
+    "tauri": "tauri",
+    "dev": "tauri dev",
+    "build": "tauri build",
+    "android:init": "tauri android init",
+    "android:dev": "tauri android dev",
+    "android:build": "tauri android build --apk",
+    "ios:init": "tauri ios init",
+    "ios:dev": "tauri ios dev",
+    "ios:build": "tauri ios build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.1.0"
+  }
+}

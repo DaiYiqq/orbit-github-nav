@@ -1,0 +1,77 @@
+{
+  "target": "https://orbit-github-nav.app.workbuddy.host/?sharecode=RP7AV2DJEZ",
+  "at": "2026-11-10T03:49:32.073Z",
+  "cold": {
+    "dcl": 446,
+    "load": 784,
+    "fcp": 412,
+    "resources": 21,
+    "transferKB": 1515,
+    "decodedKB": 1509,
+    "biggest": [
+      {
+        "name": "repos.js",
+        "kb": 1135
+      },
+      {
+        "name": "views.js",
+        "kb": 73
+      },
+      {
+        "name": "app.css",
+        "kb": 70
+      },
+      {
+        "name": "app.js",
+        "kb": 48
+      }
+    ]
+  },
+  "warm": {
+    "dcl": 169,
+    "load": 171,
+    "fcp": 144,
+    "resources": 21,
+    "transferKB": 0,
+    "decodedKB": 1509,
+    "biggest": [
+      {
+        "name": "repos.js",
+        "kb": 1135
+      },
+      {
+        "name": "views.js",
+        "kb": 73
+      },
+      {
+        "name": "app.css",
+        "kb": 70
+      },
+      {
+        "name": "app.js",
+        "kb": 48
+      }
+    ]
+  },
+  "improvement": {
+    "fcpMs": 268,
+    "loadMs": 613,
+    "transferKB": 1515
+  },
+  "a11y": {
+    "skipLink": true,
+    "images": 15,
+    "imagesMissingAlt": 0,
+    "buttons": 39,
+    "buttonsMissingName": 0,
+    "ariaLive": 1,
+    "description": "自动收录 3265 个 GitHub 优质仓库，按分类与星标整理，发现值得用的开源项目。",
+    "canonical": "https://orbit-github-nav.app.workbuddy.host/site/index.html",
+    "ogTitle": "发现 · Orbit GitHub 导航站",
+    "repoCount": 3265,
+    "rawHydrated": true,
+    "errorBoundary": true
+  },
+  "consoleErrors": [],
+  "consoleErrorCount": 0
+}

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /?sharecode=
+
+Sitemap: https://DaiYiqq.github.io/orbit-github-nav/sitemap.xml

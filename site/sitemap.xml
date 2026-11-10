@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 主地址：GitHub Pages 二级域名；另一份同源镜像在 orbit-github-nav.app.workbuddy.host -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://DaiYiqq.github.io/orbit-github-nav/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://DaiYiqq.github.io/orbit-github-nav/#/repos</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://DaiYiqq.github.io/orbit-github-nav/#/categories</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://DaiYiqq.github.io/orbit-github-nav/#/ranking</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://DaiYiqq.github.io/orbit-github-nav/#/trending</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://DaiYiqq.github.io/orbit-github-nav/#/ai</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://DaiYiqq.github.io/orbit-github-nav/#/guide</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://DaiYiqq.github.io/orbit-github-nav/#/docs</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://DaiYiqq.github.io/orbit-github-nav/#/install</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+</urlset>

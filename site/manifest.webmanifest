@@ -1,0 +1,29 @@
+{
+  "id": "./",
+  "name": "Orbit · GitHub 导航站",
+  "short_name": "Orbit",
+  "description": "自动收录 GitHub 优质仓库，按分类与星标整理，集成 AI 导航、AI 社区、博客与论文，支持搜索、筛选、收藏、分享与跨端同步。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": ["standalone", "minimal-ui"],
+  "orientation": "any",
+  "background_color": "#f5f5f7",
+  "theme_color": "#f5f5f7",
+  "categories": ["developer_tools", "productivity", "education", "utilities"],
+  "icons": [
+    { "src": "./assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "./assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "./assets/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ],
+  "shortcuts": [
+    { "name": "发现", "short_name": "发现", "description": "首页推荐与热门项目", "url": "./#/discover", "icons": [{ "src": "./assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "AI 导航", "short_name": "AI", "description": "精选 AI 工具与平台", "url": "./#/ai", "icons": [{ "src": "./assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "MCP 生态", "short_name": "MCP", "description": "MCP 协议与服务端目录", "url": "./#/feature/mcp", "icons": [{ "src": "./assets/icons/icon-192.png", "sizes": "192x192" }] },
+    { "name": "我的收藏", "short_name": "收藏", "description": "查看收藏的项目", "url": "./#/favorites", "icons": [{ "src": "./assets/icons/icon-192.png", "sizes": "192x192" }] }
+  ],
+  "prefer_related_applications": false
+}

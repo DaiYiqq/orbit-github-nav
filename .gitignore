@@ -1,0 +1,18 @@
+# WorkBuddy 本地数据与应用标记（不需要进入仓库）
+.workbuddy/
+*.genie
+
+# 本地预览 / 自检临时产物
+.orbit-cdp-profile*/
+*.log
+.DS_Store
+Thumbs.db
+
+# 构建与依赖
+node_modules/
+desktop/src-tauri/target/
+desktop/node_modules/
+
+# 编辑器
+.vscode/
+.idea/
