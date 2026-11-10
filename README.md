@@ -286,10 +286,9 @@ cd orbit-github-nav
 
 从零重来则是 `git init` → `git add .` → `git commit` → `git branch -M main` → `git remote add origin …` → `git push -u origin main`。
 
-### 第 3 步：打开 Pages 开关
+### 第 3 步：Pages（已启用）
 
-仓库页面 → **Settings** → 左侧 **Pages** → **Build and deployment** 里把 Source 选成 **GitHub Actions**。
-仓库自带的 `deploy-pages.yml` 会在推送后自动部署。
+仓库已通过 API 启用 **GitHub Pages 传统分支发布**：Source 为 `main` 分支的根目录。仓库根的 `index.html` 会跳到 `./site/`，`.nojekyll` 让 GitHub 跳过 Jekyll 直接托管静态文件，所以**不依赖 Actions 工作流**也能上线；推送 `main` 后稍等片刻即更新。
 
 ### 第 4 步：访问
 
@@ -298,6 +297,10 @@ https://DaiYiqq.github.io/orbit-github-nav/
 ```
 
 这就是 GitHub 给你的**二级域名**，永久免费、自带 HTTPS。此外还有一份已发布的同源镜像 `https://orbit-github-nav.app.workbuddy.host/`。
+
+> **关于 GitHub Actions**：本次推送使用的令牌没有 `workflow` scope，因此 `.github/workflows/` 下的 3 个工作流文件没有随仓库提交；完整内容保存在 `docs/github-actions/*.yml.txt`（站内文档中心也能查看）。需要自动更新索引、构建安装包或改用 Actions 部署时，二选一：
+> 1. `gh auth refresh -h github.com -s workflow`，然后 `node scripts/push-via-api.mjs --with-workflows` 一键补齐；
+> 2. 在 GitHub 网页把备份文件复制回 `.github/workflows/` 并去掉 `.txt` 后缀。
 网站、手机 PWA、电脑客户端共用同一份 `site/` 代码，界面一模一样。
 
 > 用了自定义域名？把 `site/config.js` 里的 `siteUrl` 填上即可。
@@ -353,6 +356,8 @@ node scripts/fetch-repos.mjs
 Github导航站/
 ├── install.bat / install.sh     ← 一键启动（新手先点这个）
 ├── README.md                   ← 你正在看的这份说明
+├── index.html / .nojekyll       ← GitHub Pages 根跳转与静态托管标记
+├── docs/github-actions/         ← 3 个工作流文件的 .txt 备份
 ├── preview/                    ← 桌面 / 手机预览图
 ├── proxy/
 │   └── github-oauth-worker.js  ← GitHub OAuth 交换代理（Cloudflare Worker 模板）
@@ -384,7 +389,8 @@ Github导航站/
 │   ├── gen-icons.py            ← 生成全套图标（纯 Python 标准库）
 │   ├── smoke-test.mjs          ← 一键自检（渲染 + 交互 + 截图）
 │   ├── check-live.mjs          ← 线上站点真实浏览器验收
-│   └── perf-audit.mjs          ← 性能 / 可访问性审计（preview/audit.json）
+│   ├── perf-audit.mjs          ← 性能 / 可访问性审计（preview/audit.json）
+│   └── push-via-api.mjs        ← 网络受限时通过 GitHub API 推送的备用通道
 ├── desktop/                    ← Tauri 2 桌面 / 移动端原生工程
 │   ├── dev-server.mjs          ← 零依赖本地静态服务
 │   └── src-tauri/              ← Rust 配置、图标、窗口权限
