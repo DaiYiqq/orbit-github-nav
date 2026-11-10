@@ -23,17 +23,37 @@ const SKIP_DIRS = new Set(['.git', 'node_modules', 'target', '.workbuddy', '.vsc
 const skipFile = (name) => name.endsWith('.genie') || name.endsWith('.log') || name === 'Thumbs.db'
   || name === '.DS_Store' || name.startsWith('.orbit-cdp-profile');
 
-function ghApi(method, endpoint, body) {
+// 代理网络偶发抖动（TLS handshake timeout / unexpected EOF / connection reset），
+// 这些属于瞬断，重试即可恢复；非瞬断错误（401/404/422 等）直接抛出。
+const TRANSIENT = /TLS handshake timeout|unexpected EOF|connection reset|EOF|timeout|network is unreachable|broken pipe|ECONNRESET|i\/o timeout|send request failed/i;
+
+function sleepSync(ms) {
+  const end = Date.now() + ms;
+  while (Date.now() < end) { /* 同步忙等，避免引入异步 */ }
+}
+
+function ghApi(method, endpoint, body, attempt = 0) {
   const args = ['api', '-X', method, endpoint];
   if (body !== undefined) args.push('--input', '-');
-  const out = execFileSync('gh', args, {
-    cwd: ROOT,
-    input: body === undefined ? undefined : JSON.stringify(body),
-    encoding: 'utf8',
-    maxBuffer: 64 * 1024 * 1024,
-    env: { ...process.env, GH_PAGER: 'cat', NO_COLOR: '1' },
-  });
-  return out.trim() ? JSON.parse(out) : {};
+  try {
+    const out = execFileSync('gh', args, {
+      cwd: ROOT,
+      input: body === undefined ? undefined : JSON.stringify(body),
+      encoding: 'utf8',
+      maxBuffer: 64 * 1024 * 1024,
+      env: { ...process.env, GH_PAGER: 'cat', NO_COLOR: '1' },
+    });
+    return out.trim() ? JSON.parse(out) : {};
+  } catch (e) {
+    const msg = String(e.stderr || e.message || e);
+    if (TRANSIENT.test(msg) && attempt < 6) {
+      const wait = 1200 * (attempt + 1);
+      process.stderr.write(`  ⚠ 网络抖动，重试 (${attempt + 1}/6)：${msg.trim().split('\n')[0]} — ${wait}ms 后继续…\n`);
+      sleepSync(wait);
+      return ghApi(method, endpoint, body, attempt + 1);
+    }
+    throw e;
+  }
 }
 
 function collect(dir, base = '', out = []) {

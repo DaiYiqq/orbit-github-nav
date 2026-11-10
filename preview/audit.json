@@ -1,62 +1,62 @@
 {
-  "target": "https://orbit-github-nav.app.workbuddy.host/?sharecode=RP7AV2DJEZ",
-  "at": "2026-11-10T03:49:32.073Z",
+  "target": "https://daiyiqq.github.io/orbit-github-nav/",
+  "at": "2026-11-10T04:43:13.735Z",
   "cold": {
-    "dcl": 446,
-    "load": 784,
-    "fcp": 412,
-    "resources": 21,
-    "transferKB": 1515,
-    "decodedKB": 1509,
+    "dcl": 0,
+    "load": 0,
+    "fcp": 692,
+    "resources": 8,
+    "transferKB": 56,
+    "decodedKB": 54,
     "biggest": [
       {
-        "name": "repos.js",
-        "kb": 1135
-      },
-      {
-        "name": "views.js",
-        "kb": 73
+        "name": "index.global.js",
+        "kb": 18
       },
       {
         "name": "app.css",
-        "kb": 70
+        "kb": 13
       },
       {
-        "name": "app.js",
-        "kb": 48
+        "name": "docs.js",
+        "kb": 9
+      },
+      {
+        "name": "catalog.js",
+        "kb": 8
       }
     ]
   },
   "warm": {
-    "dcl": 169,
-    "load": 171,
-    "fcp": 144,
+    "dcl": 150,
+    "load": 151,
+    "fcp": 124,
     "resources": 21,
     "transferKB": 0,
-    "decodedKB": 1509,
+    "decodedKB": 1516,
     "biggest": [
       {
         "name": "repos.js",
         "kb": 1135
       },
       {
+        "name": "app.css",
+        "kb": 73
+      },
+      {
         "name": "views.js",
         "kb": 73
       },
       {
-        "name": "app.css",
-        "kb": 70
-      },
-      {
         "name": "app.js",
-        "kb": 48
+        "kb": 49
       }
     ]
   },
   "improvement": {
-    "fcpMs": 268,
-    "loadMs": 613,
-    "transferKB": 1515
+    "fcpMs": 568,
+    "loadMs": -151,
+    "transferKB": 56
   },
   "a11y": {
     "skipLink": true,
@@ -66,7 +66,7 @@
     "buttonsMissingName": 0,
     "ariaLive": 1,
     "description": "自动收录 3265 个 GitHub 优质仓库，按分类与星标整理，发现值得用的开源项目。",
-    "canonical": "https://orbit-github-nav.app.workbuddy.host/site/index.html",
+    "canonical": "https://daiyiqq.github.io/orbit-github-nav#/discover",
     "ogTitle": "发现 · Orbit GitHub 导航站",
     "repoCount": 3265,
     "rawHydrated": true,
