@@ -62,7 +62,7 @@
       { id: 'account', label: '账号与登录', icon: 'user', href: '#/account' },
       { id: 'favorites', label: '我的收藏', icon: 'heart', href: '#/favorites', count: true },
       { id: 'settings', label: '设置', icon: 'settings', href: '#/settings' },
-      { id: 'contact', label: '联系开发者', icon: 'link', href: '#/contact' },
+      { id: 'contact', label: '维护与联系', icon: 'link', href: '#/contact' },
     ]},
   ];
 
@@ -642,7 +642,7 @@ npm run tauri build     # 生成各平台安装包
           <div class="setting-line"><div class="sl-text"><b>版本</b><small>Orbit ${esc(CFG.version || '1.0.0')} · 每 ${CFG.refreshDays || 7} 天自动更新</small></div></div>
           <div style="margin-top:16px;display:flex;gap:8px;flex-wrap:wrap">
             <a class="btn btn-sm" href="#/install">安装应用</a>
-            <a class="btn btn-sm" href="#/contact">联系开发者</a>
+            <a class="btn btn-sm" href="#/contact">维护与联系</a>
             <a class="btn btn-sm btn-ghost" href="${esc((CFG.developer && CFG.developer.repoUrl) || 'https://github.com')}" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div>
         </div>
       </div>

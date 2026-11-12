@@ -11,6 +11,12 @@ window.__GH_NAV_CONFIG__ = {
   siteSubtitle: 'GitHub 导航站',
   slogan: '发现值得用的开源项目',
 
+  // ── 许可证与维护方式 ───────────────────────────────────────
+  // 站内「维护与联系」页会读取这里显示；改许可证时同步改 LICENSE 文件。
+  license: 'GPL-3.0',
+  licenseUrl: 'https://github.com/DaiYiqq/orbit-github-nav/blob/main/LICENSE',
+  governance: '社区共同维护',
+
   // ── GitHub Pages ────────────────────────────────────────────
   githubUser: 'DaiYiqq',            // GitHub 用户名
   githubRepo: 'orbit-github-nav',   // 仓库名（与 Pages 二级域名一致）
@@ -18,7 +24,7 @@ window.__GH_NAV_CONFIG__ = {
 
   // ── 开发者联系信息 ─────────────────────────────────
   // 取自 GitHub 公开资料；账号未公开邮箱 / 个人主页，所以留空，
-  // 站内「联系开发者」页会明确显示「未公开」并引导使用 Issues。
+  // 站内「维护与联系」页会明确显示「未公开」并引导使用 Issues。
   // 想补充时直接填 email / site，页面与 README 会自动带上。
   developer: {
     name: '戴亿',

@@ -1,17 +1,21 @@
 # Orbit · GitHub 导航站
 
-[![GitHub stars](https://img.shields.io/github/stars/DaiYiqq/orbit-github-nav?style=flat&logo=github&label=stars)](https://github.com/DaiYiqq/orbit-github-nav/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/DaiYiqq/orbit-github-nav?style=flat&logo=github&label=stars)](https://github.com/DaiYiqq/orbit-github-nav/stargazers) [![License: GPL v3](https://img.shields.io/github/license/DaiYiqq/orbit-github-nav?style=flat&label=license)](LICENSE)
 
 [English](README.en.md) · [简体中文](README.md)
 
 > **一句话定位**：Orbit 是面向新手与开发者的中文 GitHub 导航站——把 GitHub 上值得用的开源项目自动收录、分类、按星标分层整理好，让你不用登录、不用会写代码，打开网页就能找到、看懂并直达合适的项目。
 >
 > GitHub 上有几亿个项目，好用的不少，但大多数人不知道该从哪儿找起。Orbit 把它们**自动收录、分好类、按星标整理好**，再把 AI 工具、社区、博客和论文放到同一个地方。**不用登录，不用会写代码，打开就能用。**
+>
+> **维护方式**：本项目由**社区共同维护**，采用 [GPL-3.0](LICENSE) 开源许可证。任何人都可以通过 Issue / PR 参与，协作约定见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 | 项目 | 内容 |
 | --- | --- |
 | 项目名 | Orbit · GitHub 导航站 |
 | 仓库 | https://github.com/DaiYiqq/orbit-github-nav |
+| 维护方式 | 社区共同维护（[CONTRIBUTING.md](CONTRIBUTING.md)） |
+| 许可证 | [GPL-3.0](LICENSE) |
 | 技术栈 | 原生 HTML / CSS / JavaScript（无构建、无框架依赖）· GitHub Search API · PWA + Service Worker · Tauri 2 · GitHub Pages / Actions |
 
 ## 在线 Demo
@@ -105,8 +109,8 @@
 - [常见问题](#常见问题)
 - [能力边界（说清楚）](#能力边界说清楚)
 - [命令速查](#命令速查)
-- [开发者联系信息](#开发者联系信息)
-- [贡献指南](#贡献指南)
+- [维护者与开发者联系信息](#维护者与开发者联系信息)
+- [贡献指南（社区共同维护）](#贡献指南社区共同维护)
 - [License](#license)
 
 ---
@@ -430,8 +434,14 @@ node scripts/fetch-repos.mjs
 Github导航站/
 ├── install.bat / install.sh     ← 一键启动（新手先点这个）
 ├── README.md                   ← 你正在看的这份说明
+├── README.en.md                ← 英文精简版
+├── CONTRIBUTING.md             ← 社区共同维护：协作约定 / Issue / PR 流程
+├── LICENSE                     ← GPL-3.0 许可证全文
 ├── index.html / .nojekyll       ← GitHub Pages 根跳转与静态托管标记
-├── docs/github-actions/         ← 3 个工作流文件的 .txt 备份
+├── docs/
+│   ├── GROWTH_PLAYBOOK.md      ← 增长执行手册
+│   └── github-actions/         ← 3 个工作流文件的 .txt 备份
+├── assets/                     ← social-preview.svg（源文件）/ .png（上传用）
 ├── preview/                    ← 桌面 / 手机预览图
 ├── proxy/
 │   └── github-oauth-worker.js  ← GitHub OAuth 交换代理（Cloudflare Worker 模板）
@@ -552,11 +562,14 @@ A：不会。只使用 GitHub 公开 API 的仓库信息（名称、描述、星
 
 ---
 
-## 开发者联系信息
+## 维护者与开发者联系信息
+
+本项目由**社区共同维护**：讨论、决策与合并都在 [Issues](https://github.com/DaiYiqq/orbit-github-nav/issues) / PR 里公开进行，便于留痕、对所有人可见。下表是项目发起人与公开的补充联系渠道，**日常协作请优先走 Issues / PR**。
 
 | 项目 | 内容 |
 | --- | --- |
-| 开发者 | **戴亿**（GitHub `@DaiYiqq`） |
+| 项目发起人 / 维护者 | **戴亿**（GitHub `@DaiYiqq`） |
+| 维护方式 | 社区共同维护 · 协作约定见 [CONTRIBUTING.md](CONTRIBUTING.md) |
 | GitHub 主页 | https://github.com/DaiYiqq |
 | 项目仓库 | https://github.com/DaiYiqq/orbit-github-nav |
 | GitHub Pages | https://DaiYiqq.github.io/orbit-github-nav/ |
@@ -565,7 +578,7 @@ A：不会。只使用 GitHub 公开 API 的仓库信息（名称、描述、星
 | Telegram（频道） | https://t.me/rootlover52 |
 | QQ | 1703205607 |
 
-站内还有完整的「联系开发者」整页（侧栏「我的」→「联系开发者」，或直接访问 `#/contact`）：开发者卡片、五种联系渠道、三类填好模板的 Issue 入口（报告问题 / 功能建议 / 申请收录）、项目信息与隐私说明；「使用文档」里也有对应章节。
+站内还有完整的「维护与联系」整页（侧栏「我的」→「维护与联系」，或直接访问 `#/contact`）：维护方式与许可证、维护者卡片、多种联系渠道、三类填好模板的 Issue 入口（报告问题 / 功能建议 / 申请收录）、项目信息与隐私说明；「使用文档」里也有对应章节。
 
 反馈问题时请附上系统、浏览器、访问地址与复现步骤。本站不收集访客资料，游客的收藏与设置只保存在本机浏览器里。
 
@@ -573,7 +586,9 @@ A：不会。只使用 GitHub 公开 API 的仓库信息（名称、描述、星
 
 ---
 
-## 贡献指南
+## 贡献指南（社区共同维护）
+
+Orbit **由社区共同维护**，不设单一维护者门槛：讨论、决策与合并都在公开的 [Issues](https://github.com/DaiYiqq/orbit-github-nav/issues) / PR 里进行，便于留痕、对所有人都可见。完整的协作约定、Issue 模板用法与 PR 流程见 **[CONTRIBUTING.md](CONTRIBUTING.md)**。
 
 欢迎任何形式的参与，不必先会写代码：
 
@@ -597,7 +612,18 @@ A：不会。只使用 GitHub 公开 API 的仓库信息（名称、描述、星
 
 ## License
 
-本仓库**尚未声明开源许可证**（仓库内没有 `LICENSE` 文件）。可以阅读、试用、本地运行与 Fork 学习；**商用前请先通过 [Issues](https://github.com/DaiYiqq/orbit-github-nav/issues) 联系作者确认**。第三方项目、博客、论文与链接的版权归各自作者所有，本站只做导航与索引。
+本项目采用 **[GNU General Public License v3.0（GPL-3.0）](LICENSE)**，由社区共同维护。
+
+- 你可以自由地运行、学习、修改、复制与再发布本项目（含商业用途），但**衍生作品在分发时也必须采用 GPL-3.0 并提供源代码**，且需保留版权与许可证声明、说明改动。详见 [LICENSE](LICENSE) 全文。
+- 提交 Issue / PR 即表示你同意自己的贡献按 GPL-3.0 授权给本项目与所有后续使用者。
+- **第三方内容不受本许可证影响**：本站收录的开源项目、博客、论文与外链，其版权与许可证归各自作者所有，本站只做导航与索引，不改变它们的授权条款。使用某个被收录项目前，请查看它自己的许可证。
+- 仓库索引数据来自 GitHub 公开 API；人工精选链接指向各产品官方站点。
+
+| 项目 | 内容 |
+| --- | --- |
+| 许可证 | [GPL-3.0](LICENSE)（SPDX: `GPL-3.0-only`） |
+| 版权 | Orbit  contributors（社区共同维护，见 [CONTRIBUTING.md](CONTRIBUTING.md)） |
+| 商用 | 允许，须遵守 GPL-3.0 的开源与同许可证要求 |
 
 ---
 

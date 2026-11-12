@@ -106,7 +106,7 @@
       case 'install': html = PAGES.installCenterPage(); title = '下载安装'; break;
       case 'docs': html = PAGES.docsPage(); title = '使用文档'; break;
       case 'account': html = PAGES.accountPage(); title = '账号与登录'; break;
-      case 'contact': html = PAGES.contactPage(); title = '联系开发者'; break;
+      case 'contact': html = PAGES.contactPage(); title = '维护与联系'; break;
       case 'ai': html = V.aiNavPage(); title = 'AI 导航'; break;
       case 'community': html = V.communityPage(); title = 'AI 社区'; break;
       case 'reading': html = V.readingPage(); title = '博客 & 论文'; break;

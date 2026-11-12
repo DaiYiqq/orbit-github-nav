@@ -1,14 +1,18 @@
 # Orbit · GitHub Navigation
 
-[![GitHub stars](https://img.shields.io/github/stars/DaiYiqq/orbit-github-nav?style=flat&logo=github&label=stars)](https://github.com/DaiYiqq/orbit-github-nav/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/DaiYiqq/orbit-github-nav?style=flat&logo=github&label=stars)](https://github.com/DaiYiqq/orbit-github-nav/stargazers) [![License: GPL v3](https://img.shields.io/github/license/DaiYiqq/orbit-github-nav?style=flat&label=license)](LICENSE)
 
 [简体中文](README.md) · English
 
 > **One-liner**: Orbit is a Chinese-language GitHub navigation site for beginners and developers — it automatically collects, categorizes and star-tiers open-source repositories so you can find, understand and jump to the right project without signing up, without coding, and without a build step.
+>
+> **Governance**: Orbit is **community-maintained** under the [GPL-3.0](LICENSE) license. Everyone is welcome to join via Issues / PRs — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 | Item | Value |
 | --- | --- |
 | Repository | https://github.com/DaiYiqq/orbit-github-nav |
+| Governance | Community-maintained ([CONTRIBUTING.md](CONTRIBUTING.md)) |
+| License | [GPL-3.0](LICENSE) |
 | Stack | Vanilla HTML / CSS / JavaScript (no build, no framework) · GitHub Search API · PWA + Service Worker · Tauri 2 · GitHub Pages / Actions |
 
 ## Live demo
@@ -94,17 +98,26 @@ node scripts/fetch-repos.mjs     # refresh the repository index
 node scripts/perf-audit.mjs      # performance / accessibility audit
 ```
 
-## Contributing
+## Contributing (community-maintained)
 
-See the [contributing section in the Chinese README](README.md#贡献指南). In short: use the Issue templates (bug / feature / repository nomination), edit `site/data/catalog.js` for curated content, run `node scripts/smoke-test.mjs` before a PR, and never commit secrets — `site/cloud-config.js` holds public config only.
+Orbit is **community-maintained** — discussion, decisions and merges happen in the open via [Issues](https://github.com/DaiYiqq/orbit-github-nav/issues) and PRs, with no single-maintainer gate. The full guidelines, Issue templates and PR workflow are in **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+
+In short: use the Issue templates (bug / feature / repository nomination), edit `site/data/catalog.js` for curated content, run `node scripts/smoke-test.mjs` before a PR, and never commit secrets — `site/cloud-config.js` holds public config only. Keep all browsing features usable without an account, and never fabricate data, links or screenshots.
 
 ## License
 
-No open-source license has been declared yet (there is no `LICENSE` file in this repository). Feel free to read, try and fork for learning; **please contact the author via [Issues](https://github.com/DaiYiqq/orbit-github-nav/issues) before any commercial use**. Third-party projects, blogs and papers remain the property of their respective authors — Orbit only indexes them.
+Orbit is licensed under the **[GNU General Public License v3.0 (GPL-3.0)](LICENSE)** and is community-maintained.
 
-## Developer
+- You may run, study, modify, copy and redistribute this project, including commercially, but **derivative works you distribute must also be licensed under GPL-3.0 with source available**, and must retain copyright/license notices and state changes. See [LICENSE](LICENSE) for the full text.
+- Submitting an Issue / PR means you agree your contribution is licensed under GPL-3.0 for this project and all downstream users.
+- **Third-party content is unaffected**: the repositories, blogs, papers and external links indexed here remain the property of their respective authors under their own licenses — Orbit only navigates and indexes them. Check each project's own license before using it.
+- Repository index data comes from the public GitHub API; curated links point to official product sites.
 
-**DaiYi (戴亿)** · GitHub [@DaiYiqq](https://github.com/DaiYiqq) · [Issues](https://github.com/DaiYiqq/orbit-github-nav/issues) · Telegram [@daiyi520](https://t.me/daiyi520) · [Telegram channel](https://t.me/rootlover52) · QQ 1703205607
+## Project founder & contact
+
+Orbit is community-maintained; discussion, decisions and merges happen in the open via [Issues](https://github.com/DaiYiqq/orbit-github-nav/issues) / PRs. Below are the project founder and publicly listed contact channels — **please use Issues / PRs for collaboration**.
+
+**DaiYi (戴亿)** (project founder) · GitHub [@DaiYiqq](https://github.com/DaiYiqq) · [Issues](https://github.com/DaiYiqq/orbit-github-nav/issues) · Telegram [@daiyi520](https://t.me/daiyi520) · [Telegram channel](https://t.me/rootlover52) · QQ 1703205607
 
 ---
 

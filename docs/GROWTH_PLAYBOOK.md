@@ -75,7 +75,7 @@ schedule. Happy to adjust the wording or move it to another section.
 | 开源项目目录 / 工具目录站 | 按语言或主题分类的开源工具库 | 是否需要英文简介、是否自动同步 GitHub |
 | AI 工具收录站 | AI 工具 / 开源模型分类 | 是否要求工具本身可在线试用 |
 | PWA / Web App 展示目录 | 可安装的 Web 应用分类 | 是否要求 manifest 与截图 |
-| 独立开发者作品社区 | 作品发布 / 作品集板块 | 是否允许非商业、无 License 项目 |
+| 独立开发者作品社区 | 作品发布 / 作品集板块 | 是否接受社区维护、GPL-3.0 授权的项目 |
 | 技术周刊 / 月刊的读者投稿 | 「项目推荐」栏目 | 投稿格式与截稿时间 |
 | 产品发布 / 新品榜类平台 | 每日新产品发布 | 是否需要英文、是否要求首发 |
 | 技术社区的 Show / 分享节点 | 自建项目展示帖 | 发帖规则、是否允许自荐 |
@@ -528,8 +528,11 @@ Demo 点击来源 → 以 Referrers + 各平台自带的出站点击统计为准
 ```
 项目名：Orbit · GitHub 导航站
 仓库：https://github.com/DaiYiqq/orbit-github-nav
+许可证：GPL-3.0（LICENSE，SPDX GPL-3.0-only）
+维护方式：社区共同维护（CONTRIBUTING.md）
 在线地址：https://DaiYiqq.github.io/orbit-github-nav/
 应用镜像：https://orbit-github-nav.app.workbuddy.host/
+协作文档：CONTRIBUTING.md、README.md「贡献指南（社区共同维护）」
 真实截图：preview/desktop.png、preview/mobile.png、preview/detail.png、
           preview/install.png、preview/motion.png
 Social Preview：assets/social-preview.svg（设计源文件，1280×640）、

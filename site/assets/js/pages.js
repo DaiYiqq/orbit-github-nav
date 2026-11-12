@@ -349,7 +349,7 @@
       </div>`;
   }
 
-  /* ═══════════════ 联系开发者 ═══════════════ */
+  /* ═══════════════ 维护与联系（社区共同维护） ═══════════════ */
   function contactPage() {
     const repo = DEV.repoUrl || 'https://github.com/';
     const issues = DEV.issuesUrl || repo + '/issues';
@@ -382,13 +382,13 @@
       { ic: 'code', title: '申请收录', desc: '发现值得收录但索引里没有的仓库，贴链接与推荐理由。', url: newIssue('[Repo] owner/repo', 'data', '**仓库地址**\nhttps://github.com/owner/repo\n\n**推荐理由**\n\n**建议归类**') },
     ];
 
-    return `${pageHead('联系开发者', '找到作者，也找到反馈入口', '这个页面只使用 GitHub 公开资料；未公开的联系方式会明确标注「未公开」，不会编造。')}
+    return `${pageHead('维护与联系', '社区共同维护 · 找到协作入口', '本项目由社区共同维护，采用 GPL-3.0 许可证；讨论与决策都在公开的 Issues / PR 里进行。')}
       <div class="contact-hero">
         <img class="contact-avatar" src="${esc(DEV.avatar || '')}" alt="" loading="lazy" onerror="this.style.visibility='hidden'">
         <div class="contact-identity">
-          <div class="eyebrow">开发者</div>
+          <div class="eyebrow">项目发起人 · 社区共同维护</div>
           <h2>${esc(DEV.name || DEV.github || 'Orbit 开发者')}</h2>
-          <p class="contact-handle">@${esc(DEV.github || '')} · GitHub</p>
+          <p class="contact-handle">@${esc(DEV.github || '')} · GitHub · ${esc(CFG.governance || '社区共同维护')}</p>
           <p>${esc(DEV.note || '欢迎反馈问题与建议。')}</p>
           <div class="dh-actions" style="margin-top:14px">
             <a class="btn btn-primary" href="${esc(DEV.githubUrl || '#')}" target="_blank" rel="noopener noreferrer">${icon('github', 15)} 访问 GitHub 主页</a>
@@ -419,13 +419,15 @@
             <div class="d-meta-row"><span>仓库</span><a href="${esc(repo)}" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">${esc((CFG.githubUser || '') + '/' + (CFG.githubRepo || ''))} ↗</a></div>
             <div class="d-meta-row"><span>GitHub Pages</span><a href="https://${esc(CFG.githubUser || '')}.github.io/${esc(CFG.githubRepo || '')}/" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">${esc(CFG.githubUser || '')}.github.io ↗</a></div>
             <div class="d-meta-row"><span>索引更新</span><span>${new Date((META.updatedAt || Date.now())).toLocaleDateString('zh-CN')}</span></div>
-            <div class="d-meta-row"><span>许可证</span><span>未声明 · 商用前请先通过 Issues 联系</span></div>
+            <div class="d-meta-row"><span>许可证</span><a href="${esc(CFG.licenseUrl || repo + '/blob/main/LICENSE')}" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">${esc(CFG.license || 'GPL-3.0')} ↗</a></div>
+            <div class="d-meta-row"><span>维护方式</span><span>${esc(CFG.governance || '社区共同维护')}</span></div>
           </div>
         </div>
         <div class="panel">
           <h3>隐私与数据</h3>
           <ul class="docs-list">
-            <li>这里的联系方式来自开发者公开提供的 GitHub / Telegram / QQ，不含更私密的手机号资料。</li>
+            <li>本项目由<b>社区共同维护</b>，采用 <b>${esc(CFG.license || 'GPL-3.0')}</b> 许可证；协作与决策都在公开的 Issues / PR 里进行。</li>
+            <li>这里的联系方式来自维护者公开提供的 GitHub / Telegram / QQ，不含更私密的手机号资料。</li>
             <li>本站不收集访客资料；游客的收藏与设置只保存在你自己的浏览器里。</li>
             <li>想补充邮箱 / 个人网站 / Telegram / QQ，改 <b>site/config.js</b> 的 <b>developer</b> 配置即可，页面会自动显示。</li>
           </ul>
