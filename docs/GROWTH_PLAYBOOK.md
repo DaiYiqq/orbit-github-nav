@@ -386,7 +386,9 @@ Notes:
 ```
 第 1 周（合计 ≤3h）：准备与收录清单
   - 0.5h  核对 README / README.en.md 的 Demo 链接与截图是否都真实可用
-  - 0.5h  确认 assets/social-preview.svg 已上传为仓库 Social Preview
+  - 0.5h  在仓库 Settings → Social preview → Edit → Upload an image 上传
+          assets/social-preview.png（1280×640 PNG，<1MB；SVG 是设计源文件，
+          GitHub 不接受 SVG 作为社交预览图，务必用 PNG）
   - 1.0h  用第 1 节的关键词搜候选 Awesome Lists，按筛选标准打分，
           选 2–3 个最匹配的
   - 1.0h  提交 1–2 个 PR，按模板写文案，记下提交日期与 PR 状态
@@ -530,6 +532,9 @@ Demo 点击来源 → 以 Referrers + 各平台自带的出站点击统计为准
 应用镜像：https://orbit-github-nav.app.workbuddy.host/
 真实截图：preview/desktop.png、preview/mobile.png、preview/detail.png、
           preview/install.png、preview/motion.png
+Social Preview：assets/social-preview.svg（设计源文件，1280×640）、
+          assets/social-preview.png（由图渲染的上传用 PNG，GitHub 只接受
+          PNG/JPG/GIF 且 <1MB，切勿直接上传 SVG）
 技术栈：原生 HTML/CSS/JS（无构建）、GitHub Search API、PWA + Service Worker、
         Tauri 2、GitHub Pages / Actions
 功能依据：README.md「核心功能」「这个站能做什么」「能力边界（说清楚）」
