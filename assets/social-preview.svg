@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="640" viewBox="0 0 1280 640" role="img" aria-labelledby="title desc">
+  <title id="title">Orbit · GitHub 导航站</title>
+  <desc id="desc">Brand card for Orbit, a Chinese GitHub navigation site. Not a screenshot.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="0.55" stop-color="#111d33"/>
+      <stop offset="1" stop-color="#0a1b36"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4da3ff"/>
+      <stop offset="1" stop-color="#7c8cff"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.84" cy="0.16" r="0.75">
+      <stop offset="0" stop-color="#2f6bff" stop-opacity="0.42"/>
+      <stop offset="1" stop-color="#2f6bff" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+  <rect width="1280" height="640" fill="url(#glow)"/>
+
+  <!-- decorative orbit rings -->
+  <g fill="none" stroke="#5b8cff" stroke-opacity="0.18" stroke-width="1.5">
+    <circle cx="1080" cy="140" r="250"/>
+    <circle cx="1080" cy="140" r="360"/>
+    <circle cx="1080" cy="140" r="470"/>
+  </g>
+  <circle cx="1080" cy="140" r="7" fill="#8fb6ff"/>
+  <circle cx="1330" cy="140" r="5" fill="#8fb6ff" fill-opacity="0.65"/>
+  <circle cx="1080" cy="390" r="4" fill="#8fb6ff" fill-opacity="0.5"/>
+
+  <!-- left accent bar -->
+  <rect x="88" y="150" width="6" height="258" rx="3" fill="url(#accent)"/>
+
+  <!-- brand name -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif">
+    <text x="132" y="222" fill="#8fb6ff" font-size="26" font-weight="600" letter-spacing="6">GITHUB NAVIGATION</text>
+    <text x="128" y="330" fill="#ffffff" font-size="104" font-weight="700" letter-spacing="-2">Orbit</text>
+    <text x="132" y="386" fill="#c8d6ee" font-size="30" font-weight="500">GitHub 导航站 · 发现值得用的开源项目</text>
+    <text x="132" y="440" fill="#8ea3c4" font-size="22">自动收录、分类、按星标整理 · 不用登录，打开就能用</text>
+  </g>
+
+  <!-- keyword chips -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="19" font-weight="500">
+    <g fill="#ffffff" fill-opacity="0.06" stroke="#5b8cff" stroke-opacity="0.35">
+      <rect x="132" y="486" width="176" height="46" rx="23"/>
+      <rect x="322" y="486" width="176" height="46" rx="23"/>
+      <rect x="512" y="486" width="152" height="46" rx="23"/>
+      <rect x="678" y="486" width="152" height="46" rx="23"/>
+      <rect x="844" y="486" width="176" height="46" rx="23"/>
+    </g>
+    <g fill="#cfe0ff" text-anchor="middle">
+      <text x="220" y="516">Vanilla JS</text>
+      <text x="410" y="516">GitHub API</text>
+      <text x="588" y="516">PWA</text>
+      <text x="754" y="516">Tauri 2</text>
+      <text x="932" y="516">3265 Repos</text>
+    </g>
+  </g>
+
+  <!-- footer -->
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <text x="132" y="588" fill="#6f86a9" font-size="20">github.com/DaiYiqq/orbit-github-nav</text>
+    <text x="1148" y="588" fill="#6f86a9" font-size="20" text-anchor="end">Open Source · No Sign-up</text>
+  </g>
+</svg>
