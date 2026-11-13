@@ -532,6 +532,9 @@ Demo 点击来源 → 以 Referrers + 各平台自带的出站点击统计为准
         注：GPL-3.0 已允许商用，商业许可仅为需要闭源/豁免 copyleft 的场景提供
 维护方式：社区共同维护（CONTRIBUTING.md）
 协作文档：CONTRIBUTING.md、COMMERCIAL-LICENSE.md
+签署版模板：docs/COMMERCIAL_AGREEMENT_TEMPLATE.md（中文为准）、
+          docs/COMMERCIAL_AGREEMENT_TEMPLATE.en.md（英文对照）
+          注：模板为空白可填写格式，填写后的签署版属私密商业文件，不进公开仓库
 在线地址：https://DaiYiqq.github.io/orbit-github-nav/
 应用镜像：https://orbit-github-nav.app.workbuddy.host/
 协作文档：CONTRIBUTING.md、README.md「贡献指南（社区共同维护）」

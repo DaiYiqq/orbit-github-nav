@@ -128,7 +128,9 @@ An optional **[Commercial License Agreement](COMMERCIAL-LICENSE.md)** is availab
 | Internal use, study, GPL-compliant distribution, paid GPL support | [GPL-3.0](LICENSE) — no application |
 | Closed-source integration, client delivery, OEM, no source release | [Commercial License](COMMERCIAL-LICENSE.md) |
 
-The agreement covers scope of grant and copyleft exemption, restrictions, fees and application process, term and termination, warranty disclaimer and liability limits, confidentiality, governing law, a signature block, and the rights boundary for community contributions and third-party content. The application template and contact channels are in section 12. Third-party repositories, blogs and papers indexed here keep their own licenses and are **not** covered.
+The agreement covers scope of grant and copyleft exemption, restrictions, fees and application process, term and termination, warranty disclaimer and liability limits, confidentiality, governing law, and the rights boundary for community contributions and third-party content. The application template and contact channels are in section 12. Third-party repositories, blogs and papers indexed here keep their own licenses and are **not** covered.
+
+**Ready to sign?** Fillable execution templates are provided: [Chinese (governing)](docs/COMMERCIAL_AGREEMENT_TEMPLATE.md) and [English](docs/COMMERCIAL_AGREEMENT_TEMPLATE.en.md). They cover party details, licensed scope and exclusion schedules, fees, dispute resolution, signature blocks and a pre-signature checklist. A completed version contains commercially sensitive information — do not commit it to the public repository.
 
 ## Project founder & contact
 

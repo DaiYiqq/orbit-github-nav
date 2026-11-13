@@ -439,11 +439,13 @@ Github导航站/
 ├── README.en.md                ← 英文精简版
 ├── CONTRIBUTING.md             ← 社区共同维护：协作约定 / Issue / PR 流程
 ├── LICENSE                     ← GPL-3.0 许可证全文
-├── COMMERCIAL-LICENSE.md       ← 可选商业许可协议（双许可 / 申请流程 / 签署栏）
-├── index.html / .nojekyll       ← GitHub Pages 根跳转与静态托管标记
+├── COMMERCIAL-LICENSE.md       ← 可选商业许可协议（双许可 / 申请流程）
 ├── docs/
+│   ├── COMMERCIAL_AGREEMENT_TEMPLATE.md     ← 可填写的签署版模板（中文为准）
+│   ├── COMMERCIAL_AGREEMENT_TEMPLATE.en.md  ← English execution template
 │   ├── GROWTH_PLAYBOOK.md      ← 增长执行手册
 │   └── github-actions/         ← 3 个工作流文件的 .txt 备份
+├── index.html / .nojekyll       ← GitHub Pages 根跳转与静态托管标记
 ├── assets/                     ← social-preview.svg（源文件）/ .png（上传用）
 ├── preview/                    ← 桌面 / 手机预览图
 ├── proxy/
@@ -640,7 +642,9 @@ Orbit **由社区共同维护**，不设单一维护者门槛：讨论、决策�
 | 自用、内部使用、学习、按 GPL-3.0 开源分发、按 GPL 收费提供服务 | [GPL-3.0](LICENSE)，无需申请 |
 | 把 Orbit 集成进闭源产品、交付客户、OEM、不公开衍生作品源码 | [商业许可](COMMERCIAL-LICENSE.md) |
 
-[COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md) 是完整协议文本，包含：授权范围与 copyleft 义务豁免、限制与禁止事项、费用与申请流程、期限与终止、保证免责与责任限制、保密、适用法律与争议解决、签署栏模板，以及社区贡献与第三方内容的权利边界。申请渠道与模板在协议第 12 节。
+[COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md) 是完整协议文本，包含：授权范围与 copyleft 义务豁免、限制与禁止事项、费用与申请流程、期限与终止、保证免责与责任限制、保密、适用法律与争议解决，以及社区贡献与第三方内容的权利边界。申请渠道在协议第 12 节。
+
+**准备签署？** 可直接填写的[签署版模板（中文为准）](docs/COMMERCIAL_AGREEMENT_TEMPLATE.md)与[English template](docs/COMMERCIAL_AGREEMENT_TEMPLATE.en.md)已备好，含双方主体、授权范围与排除项清单、费用、争议解决、签署栏及签署前自检清单。填写后的版本含商业敏感信息，请勿提交到公开仓库。
 
 > 本站收录的第三方项目、博客与论文各自遵循其原许可证，商业许可不覆盖它们；使用前请查看该项目自己的许可证。
 

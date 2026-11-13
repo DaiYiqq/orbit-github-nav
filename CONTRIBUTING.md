@@ -92,7 +92,7 @@ Orbit 由**社区共同维护**。这里说明如何参与、决策怎么做出�
 - 若你的 PR 引入了第三方代码或素材，请在 PR 里注明来源与其许可证，并确认与 GPL-3.0 **及**商业许可兼容；不兼容的内容不会被纳入商业许可范围。
 - **第三方内容不受本许可证影响**：本站收录的开源项目、博客、论文与外链，版权与许可证归各自作者所有，本站只做导航与索引，不改变它们的授权条款。
 - 请不要删除或改写 [LICENSE](LICENSE) / [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md) 全文，也不要移除源码中的版权与许可证声明。
-- 商业许可的具体条款、申请流程与签署方式见 [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md)，相关问题请在公开 Issue 中讨论。
+- 商业许可的具体条款与申请流程见 [COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md)；可直接填写的[签署版模板](docs/COMMERCIAL_AGREEMENT_TEMPLATE.md)（[English](docs/COMMERCIAL_AGREEMENT_TEMPLATE.en.md)）含授权范围与排除项清单，填写后的版本含商业敏感信息，**不要提交到公开仓库**。条款相关问题请在公开 Issue 中讨论，具体商业条款通过私信渠道沟通。
 
 ---
 

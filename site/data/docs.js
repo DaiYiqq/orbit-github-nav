@@ -186,6 +186,7 @@ window.__ORBIT_DOCS__ = {
           ['贡献指南', 'CONTRIBUTING.md', '社区共同维护的协作约定与 PR 流程'],
           ['许可证', 'LICENSE（GPL-3.0）', '使用、修改、再发布与商用前先读'],
           ['商业许可', 'COMMERCIAL-LICENSE.md', '可选：闭源集成 / OEM / 客户交付时申请'],
+          ['签署版模板', 'docs/COMMERCIAL_AGREEMENT_TEMPLATE.md', '可填写的签署模板（含中英对照与排除项清单）'],
           ['邮箱', '未公开', '请用 Issues 联系；补充后会自动显示'],
           ['个人网站', '未公开', '可在 site/config.js 的 developer 配置里补充'],
         ] },

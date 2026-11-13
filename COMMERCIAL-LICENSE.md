@@ -1,8 +1,8 @@
 # Orbit 商业许可协议（Commercial License Agreement）
 
-> 版本 1.0 · 生效日期 2026-11-13 · 适用项目：Orbit · GitHub 导航站
+> 版本 1.1 · 生效日期 2026-11-13 · 适用项目：Orbit · GitHub 导航站
 > 仓库：https://github.com/DaiYiqq/orbit-github-nav
-> 本文件是 [GPL-3.0](LICENSE) 之外的**可选替代授权**说明与协议文本。中文文本为准；如需英文对照文本，可在申请时向授权方索取。
+> 本文件是 [GPL-3.0](LICENSE) 之外的**可选替代授权**说明与协议文本。中文文本为准；[英文对照签署模板](docs/COMMERCIAL_AGREEMENT_TEMPLATE.en.md)可直接下载，协议全文如需英文译本可在申请时向授权方索取。
 
 ---
 
@@ -219,7 +219,12 @@ Orbit 默认按 **GPL-3.0** 开源，商业使用本身完全免费、无需申�
 已允许商业使用，本申请仅针对需要豁免 copyleft 义务的场景。
 ```
 
-**签署栏模板**（由双方在签署版中填写，仓库内仅作格式示意）：
+**签署版模板**：仓库提供**可直接填写、双方签署的完整模板**：
+
+- 中文（为准）：[docs/COMMERCIAL_AGREEMENT_TEMPLATE.md](docs/COMMERCIAL_AGREEMENT_TEMPLATE.md)
+- 英文对照：[docs/COMMERCIAL_AGREEMENT_TEMPLATE.en.md](docs/COMMERCIAL_AGREEMENT_TEMPLATE.en.md)
+
+模板逐项列全了签署版需确定的商业要素（双方主体、标准条款并入、授权范围与附件清单、期限、费用与支付、交付支持、争议解决、特别约定、签署栏），并含签署前自检清单、授权范围清单、明确排除项清单。简版签署栏格式示意：
 
 ```
 授权方：<签署时填写>
@@ -234,6 +239,8 @@ Orbit 默认按 **GPL-3.0** 开源，商业使用本身完全免费、无需申�
 授权费与支付：<按双方书面约定>
 争议解决机构：<按双方书面约定>
 ```
+
+> 填写完成的签署版含商业敏感信息，**请勿提交到公开仓库或公开 Issue**，通过私信渠道交换；仓库内只保留空白模板。
 
 ---
 
@@ -264,5 +271,8 @@ A：以 [LICENSE](LICENSE) 全文为准，特别是关于分发目标代码时�
 | 版本 | 日期 | 变更 |
 | --- | --- | --- |
 | 1.0 | 2026-11-13 | 首次发布：确立双许可框架、copyleft 豁免边界、社区贡献与第三方内容的权利边界 |
+| 1.1 | 2026-11-13 | 第 12 节接入可填写的[签署版模板](docs/COMMERCIAL_AGREEMENT_TEMPLATE.md)（中英对照）；仅补充流程与模板，未修改授权条款 |
 
 本文件与 [LICENSE](LICENSE)、[CONTRIBUTING.md](CONTRIBUTING.md) 一并维护。条款变更不影响已生效的签署版。
+
+**相关文件**：[COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md)（标准条款）· [签署版模板（中文为准）](docs/COMMERCIAL_AGREEMENT_TEMPLATE.md) · [English template](docs/COMMERCIAL_AGREEMENT_TEMPLATE.en.md) · [CONTRIBUTING.md](CONTRIBUTING.md) 第 6 节（贡献者授权）。
