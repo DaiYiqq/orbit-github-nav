@@ -112,6 +112,8 @@
 - [维护者与开发者联系信息](#维护者与开发者联系信息)
 - [贡献指南（社区共同维护）](#贡献指南社区共同维护)
 - [License](#license)
+- [商业许可（可选）](#商业许可可选)
+- [商业许可协议全文](COMMERCIAL-LICENSE.md)
 
 ---
 
@@ -437,6 +439,7 @@ Github导航站/
 ├── README.en.md                ← 英文精简版
 ├── CONTRIBUTING.md             ← 社区共同维护：协作约定 / Issue / PR 流程
 ├── LICENSE                     ← GPL-3.0 许可证全文
+├── COMMERCIAL-LICENSE.md       ← 可选商业许可协议（双许可 / 申请流程 / 签署栏）
 ├── index.html / .nojekyll       ← GitHub Pages 根跳转与静态托管标记
 ├── docs/
 │   ├── GROWTH_PLAYBOOK.md      ← 增长执行手册
@@ -622,8 +625,24 @@ Orbit **由社区共同维护**，不设单一维护者门槛：讨论、决策�
 | 项目 | 内容 |
 | --- | --- |
 | 许可证 | [GPL-3.0](LICENSE)（SPDX: `GPL-3.0-only`） |
-| 版权 | Orbit  contributors（社区共同维护，见 [CONTRIBUTING.md](CONTRIBUTING.md)） |
+| 版权 | Orbit contributors（社区共同维护，见 [CONTRIBUTING.md](CONTRIBUTING.md)） |
 | 商用 | 允许，须遵守 GPL-3.0 的开源与同许可证要求 |
+| 闭源商用 | 需要豁免 copyleft 时，可申请[商业许可](COMMERCIAL-LICENSE.md) |
+
+**需要闭源集成 / OEM / 客户交付？** 本项目提供可选的 **[商业许可协议](COMMERCIAL-LICENSE.md)** 作为 GPL-3.0 的替代授权。注意：**GPL-3.0 本身就允许商业使用和收费**，只有当你不希望公开衍生作品源码时才需要申请商业许可，普通使用、自用、按 GPL 开源分发都无需申请、无需付费。详见[商业许可协议](COMMERCIAL-LICENSE.md)第 0 节的场景对照表。
+
+---
+
+## 商业许可（可选）
+
+| 你的场景 | 用哪个授权 |
+| --- | --- |
+| 自用、内部使用、学习、按 GPL-3.0 开源分发、按 GPL 收费提供服务 | [GPL-3.0](LICENSE)，无需申请 |
+| 把 Orbit 集成进闭源产品、交付客户、OEM、不公开衍生作品源码 | [商业许可](COMMERCIAL-LICENSE.md) |
+
+[COMMERCIAL-LICENSE.md](COMMERCIAL-LICENSE.md) 是完整协议文本，包含：授权范围与 copyleft 义务豁免、限制与禁止事项、费用与申请流程、期限与终止、保证免责与责任限制、保密、适用法律与争议解决、签署栏模板，以及社区贡献与第三方内容的权利边界。申请渠道与模板在协议第 12 节。
+
+> 本站收录的第三方项目、博客与论文各自遵循其原许可证，商业许可不覆盖它们；使用前请查看该项目自己的许可证。
 
 ---
 

@@ -528,8 +528,10 @@ Demo 点击来源 → 以 Referrers + 各平台自带的出站点击统计为准
 ```
 项目名：Orbit · GitHub 导航站
 仓库：https://github.com/DaiYiqq/orbit-github-nav
-许可证：GPL-3.0（LICENSE，SPDX GPL-3.0-only）
+许可证：GPL-3.0（LICENSE，SPDX GPL-3.0-only）+ 可选商业许可（COMMERCIAL-LICENSE.md）
+        注：GPL-3.0 已允许商用，商业许可仅为需要闭源/豁免 copyleft 的场景提供
 维护方式：社区共同维护（CONTRIBUTING.md）
+协作文档：CONTRIBUTING.md、COMMERCIAL-LICENSE.md
 在线地址：https://DaiYiqq.github.io/orbit-github-nav/
 应用镜像：https://orbit-github-nav.app.workbuddy.host/
 协作文档：CONTRIBUTING.md、README.md「贡献指南（社区共同维护）」

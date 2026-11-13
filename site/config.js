@@ -15,6 +15,7 @@ window.__GH_NAV_CONFIG__ = {
   // 站内「维护与联系」页会读取这里显示；改许可证时同步改 LICENSE 文件。
   license: 'GPL-3.0',
   licenseUrl: 'https://github.com/DaiYiqq/orbit-github-nav/blob/main/LICENSE',
+  commercialLicenseUrl: 'https://github.com/DaiYiqq/orbit-github-nav/blob/main/COMMERCIAL-LICENSE.md',
   governance: '社区共同维护',
 
   // ── GitHub Pages ────────────────────────────────────────────

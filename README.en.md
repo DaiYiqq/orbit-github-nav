@@ -113,6 +113,23 @@ Orbit is licensed under the **[GNU General Public License v3.0 (GPL-3.0)](LICENS
 - **Third-party content is unaffected**: the repositories, blogs, papers and external links indexed here remain the property of their respective authors under their own licenses — Orbit only navigates and indexes them. Check each project's own license before using it.
 - Repository index data comes from the public GitHub API; curated links point to official product sites.
 
+| Item | Value |
+| --- | --- |
+| License | [GPL-3.0](LICENSE) (SPDX: `GPL-3.0-only`) |
+| Commercial use | Allowed under GPL-3.0's copyleft terms |
+| Closed-source use | Optional [Commercial License](COMMERCIAL-LICENSE.md) |
+
+## Commercial license (optional)
+
+An optional **[Commercial License Agreement](COMMERCIAL-LICENSE.md)** is available as an alternative to GPL-3.0. Note that **GPL-3.0 already permits commercial use and charging** — you only need the commercial license when you want to integrate Orbit into a closed-source product, deliver it to clients, or otherwise distribute derivative works **without** releasing their source code. Normal use, internal use and GPL-compliant distribution need no application and no fee.
+
+| Your case | Which license |
+| --- | --- |
+| Internal use, study, GPL-compliant distribution, paid GPL support | [GPL-3.0](LICENSE) — no application |
+| Closed-source integration, client delivery, OEM, no source release | [Commercial License](COMMERCIAL-LICENSE.md) |
+
+The agreement covers scope of grant and copyleft exemption, restrictions, fees and application process, term and termination, warranty disclaimer and liability limits, confidentiality, governing law, a signature block, and the rights boundary for community contributions and third-party content. The application template and contact channels are in section 12. Third-party repositories, blogs and papers indexed here keep their own licenses and are **not** covered.
+
 ## Project founder & contact
 
 Orbit is community-maintained; discussion, decisions and merges happen in the open via [Issues](https://github.com/DaiYiqq/orbit-github-nav/issues) / PRs. Below are the project founder and publicly listed contact channels — **please use Issues / PRs for collaboration**.

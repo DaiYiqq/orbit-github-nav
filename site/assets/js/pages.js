@@ -374,6 +374,7 @@
       DEV.qq
         ? { ic: 'qq', label: 'QQ', value: DEV.qq, href: '', desc: 'QQ 号，请备注来意' }
         : { ic: 'qq', label: 'QQ', value: '未公开', href: '', desc: '可在 site/config.js 里补充' },
+      { ic: 'shield', label: '商业许可（可选）', value: 'GPL-3.0 之外的替代授权', href: CFG.commercialLicenseUrl || (repo + '/blob/main/COMMERCIAL-LICENSE.md'), desc: '需闭源集成 / OEM / 客户交付时才申请；普通商用按 GPL-3.0 即可' },
     ];
 
     const feedback = [
@@ -420,13 +421,14 @@
             <div class="d-meta-row"><span>GitHub Pages</span><a href="https://${esc(CFG.githubUser || '')}.github.io/${esc(CFG.githubRepo || '')}/" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">${esc(CFG.githubUser || '')}.github.io ↗</a></div>
             <div class="d-meta-row"><span>索引更新</span><span>${new Date((META.updatedAt || Date.now())).toLocaleDateString('zh-CN')}</span></div>
             <div class="d-meta-row"><span>许可证</span><a href="${esc(CFG.licenseUrl || repo + '/blob/main/LICENSE')}" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">${esc(CFG.license || 'GPL-3.0')} ↗</a></div>
+            <div class="d-meta-row"><span>商业许可</span><a href="${esc(CFG.commercialLicenseUrl || repo + '/blob/main/COMMERCIAL-LICENSE.md')}" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">可选 · 闭源集成时申请 ↗</a></div>
             <div class="d-meta-row"><span>维护方式</span><span>${esc(CFG.governance || '社区共同维护')}</span></div>
           </div>
         </div>
         <div class="panel">
           <h3>隐私与数据</h3>
           <ul class="docs-list">
-            <li>本项目由<b>社区共同维护</b>，采用 <b>${esc(CFG.license || 'GPL-3.0')}</b> 许可证；协作与决策都在公开的 Issues / PR 里进行。</li>
+            <li>本项目由<b>社区共同维护</b>，采用 <b>${esc(CFG.license || 'GPL-3.0')}</b> 许可证；协作与决策都在公开的 Issues / PR 里进行。GPL-3.0 已允许商用，只有需要闭源分发时才需申请<a href="${esc(CFG.commercialLicenseUrl || repo + '/blob/main/COMMERCIAL-LICENSE.md')}" target="_blank" rel="noopener noreferrer" style="color:var(--blue)">商业许可</a>。</li>
             <li>这里的联系方式来自维护者公开提供的 GitHub / Telegram / QQ，不含更私密的手机号资料。</li>
             <li>本站不收集访客资料；游客的收藏与设置只保存在你自己的浏览器里。</li>
             <li>想补充邮箱 / 个人网站 / Telegram / QQ，改 <b>site/config.js</b> 的 <b>developer</b> 配置即可，页面会自动显示。</li>
