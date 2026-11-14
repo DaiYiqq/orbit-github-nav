@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-08T14:40:51.737Z",
-  "count": 3265,
-  "queryCount": 47,
+  "updatedAt": "2026-11-14T11:50:54.767Z",
+  "count": 3384,
+  "queryCount": 49,
   "source": "GitHub Search API",
   "categories": [
     {
@@ -10,7 +10,7 @@
       "icon": "sparkles",
       "color": "#7C5CFF",
       "desc": "LLM、多模态、训练与推理框架",
-      "count": 1329
+      "count": 1419
     },
     {
       "slug": "mcp",
@@ -18,7 +18,7 @@
       "icon": "plug",
       "color": "#0A84FF",
       "desc": "Model Context Protocol 服务端与客户端",
-      "count": 379
+      "count": 378
     },
     {
       "slug": "agent",
@@ -26,7 +26,7 @@
       "icon": "bot",
       "color": "#FF7A45",
       "desc": "自主智能体、编码代理、多智能体框架",
-      "count": 840
+      "count": 848
     },
     {
       "slug": "skills",
@@ -34,7 +34,7 @@
       "icon": "blocks",
       "color": "#30B0C7",
       "desc": "Claude Skills / Agent Skills / 提示词技能",
-      "count": 410
+      "count": 427
     },
     {
       "slug": "frontend",
@@ -42,7 +42,7 @@
       "icon": "layout",
       "color": "#FF375F",
       "desc": "框架、组件库、设计系统与 CSS",
-      "count": 626
+      "count": 637
     },
     {
       "slug": "backend",
@@ -50,7 +50,7 @@
       "icon": "server",
       "color": "#34C759",
       "desc": "Web 框架、API、微服务",
-      "count": 1076
+      "count": 1090
     },
     {
       "slug": "mobile",
@@ -58,7 +58,7 @@
       "icon": "phone",
       "color": "#FF9F0A",
       "desc": "iOS / Android / 跨平台 / 桌面应用",
-      "count": 619
+      "count": 626
     },
     {
       "slug": "devops",
@@ -66,7 +66,7 @@
       "icon": "cloud",
       "color": "#5E5CE6",
       "desc": "容器、K8s、CI/CD、可观测性",
-      "count": 404
+      "count": 410
     },
     {
       "slug": "database",
@@ -90,7 +90,7 @@
       "icon": "cpu",
       "color": "#8E8E93",
       "desc": "操作系统、编译器、Rust/C++ 基础设施",
-      "count": 316
+      "count": 315
     },
     {
       "slug": "data",
@@ -98,7 +98,7 @@
       "icon": "chart",
       "color": "#AF52DE",
       "desc": "数据分析、BI、图表与数据工程",
-      "count": 287
+      "count": 294
     },
     {
       "slug": "game",
@@ -106,7 +106,7 @@
       "icon": "gamepad",
       "color": "#FF2D55",
       "desc": "引擎、渲染、游戏开发",
-      "count": 235
+      "count": 238
     },
     {
       "slug": "learning",
@@ -114,7 +114,7 @@
       "icon": "book",
       "color": "#FFCC00",
       "desc": "Awesome 清单、教程、面试、路线图",
-      "count": 709
+      "count": 734
     },
     {
       "slug": "productivity",
@@ -122,7 +122,7 @@
       "icon": "bolt",
       "color": "#00C7BE",
       "desc": "CLI 工具、自动化、self-hosted 应用",
-      "count": 839
+      "count": 890
     },
     {
       "slug": "opensource",
@@ -130,57 +130,57 @@
       "icon": "heart",
       "color": "#FF6482",
       "desc": "社区活跃、文档完善的高质量开源项目",
-      "count": 1382
+      "count": 1411
     }
   ],
   "languages": [
     [
       "Python",
-      668
+      712
     ],
     [
       "TypeScript",
-      603
+      629
     ],
     [
       "JavaScript",
-      314
+      324
     ],
     [
       "Go",
-      274
+      281
     ],
     [
       "Rust",
-      206
+      210
     ],
     [
       "C++",
-      162
+      164
     ],
     [
       "Java",
-      146
+      145
+    ],
+    [
+      "Swift",
+      107
     ],
     [
       "Kotlin",
       107
     ],
     [
-      "Swift",
-      106
-    ],
-    [
       "Jupyter Notebook",
-      73
-    ],
-    [
-      "HTML",
-      56
+      83
     ],
     [
       "Shell",
-      53
+      55
+    ],
+    [
+      "HTML",
+      54
     ],
     [
       "C",
@@ -188,11 +188,7 @@
     ],
     [
       "C#",
-      38
-    ],
-    [
-      "PHP",
-      18
+      41
     ],
     [
       "Ruby",
@@ -203,11 +199,23 @@
       17
     ],
     [
+      "PHP",
+      17
+    ],
+    [
       "Vue",
       15
     ],
     [
       "Dart",
+      9
+    ],
+    [
+      "Markdown",
+      8
+    ],
+    [
+      "MDX",
       8
     ],
     [
@@ -215,15 +223,11 @@
       8
     ],
     [
-      "MDX",
-      7
-    ],
-    [
       "Objective-C",
       7
     ],
     [
-      "Markdown",
+      "PowerShell",
       6
     ],
     [
@@ -233,10 +237,6 @@
     [
       "Lua",
       6
-    ],
-    [
-      "PowerShell",
-      5
     ],
     [
       "TeX",
