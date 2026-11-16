@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-16T05:06:39.616Z",
-  "count": 3386,
+  "updatedAt": "2026-11-16T10:26:28.981Z",
+  "count": 3387,
   "queryCount": 49,
   "source": "GitHub Search API",
   "categories": [
@@ -10,7 +10,7 @@
       "icon": "sparkles",
       "color": "#7C5CFF",
       "desc": "LLM、多模态、训练与推理框架",
-      "count": 1422
+      "count": 1421
     },
     {
       "slug": "mcp",
@@ -26,7 +26,7 @@
       "icon": "bot",
       "color": "#FF7A45",
       "desc": "自主智能体、编码代理、多智能体框架",
-      "count": 849
+      "count": 848
     },
     {
       "slug": "skills",
@@ -34,7 +34,7 @@
       "icon": "blocks",
       "color": "#30B0C7",
       "desc": "Claude Skills / Agent Skills / 提示词技能",
-      "count": 427
+      "count": 426
     },
     {
       "slug": "frontend",
@@ -50,7 +50,7 @@
       "icon": "server",
       "color": "#34C759",
       "desc": "Web 框架、API、微服务",
-      "count": 1089
+      "count": 1088
     },
     {
       "slug": "mobile",
@@ -90,7 +90,7 @@
       "icon": "cpu",
       "color": "#8E8E93",
       "desc": "操作系统、编译器、Rust/C++ 基础设施",
-      "count": 311
+      "count": 312
     },
     {
       "slug": "data",
@@ -106,7 +106,7 @@
       "icon": "gamepad",
       "color": "#FF2D55",
       "desc": "引擎、渲染、游戏开发",
-      "count": 238
+      "count": 239
     },
     {
       "slug": "learning",
@@ -114,7 +114,7 @@
       "icon": "book",
       "color": "#FFCC00",
       "desc": "Awesome 清单、教程、面试、路线图",
-      "count": 735
+      "count": 736
     },
     {
       "slug": "productivity",
@@ -122,7 +122,7 @@
       "icon": "bolt",
       "color": "#00C7BE",
       "desc": "CLI 工具、自动化、self-hosted 应用",
-      "count": 896
+      "count": 895
     },
     {
       "slug": "opensource",
@@ -136,15 +136,15 @@
   "languages": [
     [
       "Python",
-      714
+      715
     ],
     [
       "TypeScript",
-      631
+      630
     ],
     [
       "JavaScript",
-      322
+      321
     ],
     [
       "Go",
@@ -152,7 +152,7 @@
     ],
     [
       "Rust",
-      212
+      213
     ],
     [
       "C++",
@@ -184,7 +184,7 @@
     ],
     [
       "C",
-      48
+      49
     ],
     [
       "C#",
